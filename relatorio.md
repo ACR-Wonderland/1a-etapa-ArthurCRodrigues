@@ -1,29 +1,18 @@
-## Feedback do código - ArthurCRodrigues
+### Feedback do Desenvolvedor
 
-**Nota final: 33.67/100**
+**Nota Final: 87.67/100**
 
-### Testes Base:
-- **Pontos Positivos:**
-  - A rota /sugestao está correta e responde adequadamente a requisições GET com query string.
-  - A rota /api/lanches retorna um status 200 OK, um header Content-Type de application/json e uma lista de lanches com atributos corretos.
+Parabéns, ArthurCRodrigues, pelo seu trabalho na implementação do servidor em Node.js utilizando o Express.js. Você conseguiu atender a maioria dos requisitos do desafio e obteve uma pontuação muito boa!
 
-- **Pontos a Melhorar:**
-  - A rota / não está retornando o status 200 OK esperado.
-  - A rota / não está retornando o Content-Type correto como text/html.
-  - A rota / não contém pelo menos um formulário como esperado.
-  - A rota /sugestao não está exibindo o "nome" e "ingredientes" enviados no HTML.
-  - A rota /contato (GET) não possui todos os campos esperados no formulário.
-  - A rota /contato (POST) não está exibindo todos os dados enviados no formulário.
-  
-### Testes Bônus:
-- **Pontos a Melhorar:**
-  - Você não implementou o uso correto de PRG (Post-Redirect-Get).
-  - Os rótulos dos formulários na rota raiz e na rota /contato não estão corretos.
+#### O que você fez de bom:
+- Implementou corretamente a rota raiz (GET /) para retornar o arquivo HTML esperado.
+- Criou a rota para sugestão (GET /sugestao) que exibe os dados submetidos no HTML de agradecimento.
+- Implementou a rota para receber dados do formulário de contato (POST /contato) e exibiu esses dados no HTML de confirmação.
+- Criou a rota da API de Lanches (GET /api/lanches) que retorna um arquivo JSON com os lanches.
+- Lidou com o erro 404 de forma adequada, exibindo a página correta.
 
-### Testes de Penalidade:
-- **Pontos a Melhorar:**
-  - Evite permitir métodos como POST, PUT, DELETE, PATCH em rotas que não deveriam aceitá-los.
-  - Certifique-se de que os tipos de conteúdo retornados pelas rotas estão corretos.
-  - Verifique se os formulários possuem atributos de nome corretos.
+#### O que pode ser melhorado:
+- Você não implementou corretamente a rota para exibir o formulário de contato (GET /contato). Certifique-se de incluir os campos necessários no formulário.
+- Certifique-se de adicionar os placeholders corretos nos arquivos HTML para substituição dos dados.
 
-No geral, você fez um bom progresso na implementação das rotas, mas ainda há alguns ajustes a serem feitos para atender a todos os requisitos dos testes. Continue praticando e melhorando suas habilidades em Express.js, você está no caminho certo! Se precisar de ajuda com alguma parte específica, fique à vontade para pedir suporte. Parabéns pelo esforço e continue progredindo! 👏🚀
+Continue praticando e aprimorando suas habilidades em Node.js e Express.js. Você está no caminho certo para se tornar um desenvolvedor ainda melhor. Ótimo trabalho!🚀
