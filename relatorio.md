@@ -12,7 +12,7 @@ Você tem 992 créditos restantes para usar o sistema de feedback AI.
    - O formulário precisa ter um botão do tipo submit.
    - Deve conter uma âncora para a rota raiz /.
 
-2. **Substituições de Placeholders:**
+2. **Substituições de Placeholders:*
    - Os placeholders nas variáveis `responseHtml.replace('', ...)` precisam ser substituídos por strings que correspondam aos placeholders no HTML.
 
 3. **Dependências e .gitignore:**
