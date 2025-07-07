@@ -5,7 +5,7 @@ Você tem 995 créditos restantes para usar o sistema de feedback AI.
 
 Parabéns, ArthurCRodrigues, pelo seu esforço na resolução do desafio! Sua pontuação foi muito boa, mas vamos analisar juntos como você pode melhorar seu código e corrigir alguns erros identificados.
 
-## Erros Detectados
+## Erros Detectado
 
 1. **Rota /contato (GET) - Campos do Formulário**: Você não implementou corretamente os campos do formulário na rota de contato para o método GET. É importante incluir campos de input ou textarea com os atributos corretos (name) para os campos "nome", "email", "assunto" e "mensagem".
 
