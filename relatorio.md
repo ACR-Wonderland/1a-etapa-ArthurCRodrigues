@@ -1,4 +1,4 @@
-Você tem 998 créditos restantes para usar o sistema de feedback AI.### Nota final: 87.67/100
+aaVocê tem 998 créditos restantes para usar o sistema de feedback AI.### Nota final: 87.67/100
 
 Olá ArthurCRodrigues,
 
