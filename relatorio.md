@@ -9,7 +9,7 @@ Você tem 997 créditos restantes para usar o sistema de feedback AI.
    - **Como corrigir:** Preencha os campos vazios com os identificadores corretos. Por exemplo, `replace('{nome}', ...)`.
 
 2. **Dependências e Pasta `node_modules`:**
-   - O projeto contém outras dependências além do Express e a pasta `node_modules`.
+   - O projeto contém outras dependências além do Express e a pasta `node_modules`a.
    - **Como corrigir:** Para manter o projeto mais limpo e organizado, remova as dependências desnecessárias e evite enviar a pasta `node_modules` no código fonte.
 
 3. **Rota de Contato (GET) Incompleta:**
