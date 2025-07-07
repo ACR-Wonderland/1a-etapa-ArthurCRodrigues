@@ -35,10 +35,7 @@ app.get('/sugestao', (req, res) => {
     });
 });
 
-// Rota para a página de contatos: GET /contato
-app.get('/contato', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/views', 'contato.html'));
-});
+
 
 // Rota para receber dados do formulário de contato: POST /contato
 app.post('/contato', (req, res) => {
