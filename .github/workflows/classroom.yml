@@ -1,5 +1,4 @@
-name: Autograder
-
+name: Autograderr
 on:
   push:
     branches:
