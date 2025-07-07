@@ -1,7 +1,7 @@
 Você tem 996 créditos restantes para usar o sistema de feedback AI.
 ## Feedback do Código - ArthurCRodrigues
 
-### Nota Final: 79.67/100
+### Nota Final: 79.67/10
 
 ### Erros Encontrados:
 1. **Variáveis Não Substituídas nos arquivos HTML:**
