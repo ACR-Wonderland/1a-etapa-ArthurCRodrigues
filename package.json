@@ -1,0 +1,22 @@
+{
+  "name": "etapa-1-levty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ACR-Wonderland/etapa-1-levty.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ACR-Wonderland/etapa-1-levty/issues"
+  },
+  "homepage": "https://github.com/ACR-Wonderland/etapa-1-levty#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
