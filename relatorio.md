@@ -1,5 +1,4 @@
 ### Feedback do Desenvolvedor
-
 **Nota Final: 87.67/100**
 
 Parabéns, ArthurCRodrigues, pelo seu trabalho na implementação do servidor em Node.js utilizando o Express.js. Você conseguiu atender a maioria dos requisitos do desafio e obteve uma pontuação muito boa!
