@@ -7,7 +7,7 @@ Você tem 991 créditos restantes para usar o sistema de feedback AI.
 1. **Variáveis de Substituição Vazias:**
    - Nas rotas `/sugestao` e `/contato`, as variáveis de substituição no arquivo HTML estão vazias. Você deve preencher essas variáveis com os valores corretos para exibir as informações corretamente.
 
-2. **Rota de Contato com Método GET:**
+2. **Rota de Contato com Método GET:**a
    - As rotas devem seguir o método HTTP correto. A rota `/contato` está configurada para POST, mas deveria ter uma rota separada com o método GET para exibir o formulário de contato.
 
 3. **Dependências Extras Além do Express:**
