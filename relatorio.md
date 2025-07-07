@@ -2,10 +2,10 @@ aaVocê tem 998 créditos restantes para usar o sistema de feedback AI.### Nota 
 
 Olá ArthurCRodrigues,
 
-Parabéns pela sua implementação do servidor em Node.js utilizando o Express.js! Você conseguiu atender a maioria dos requisitos do desafio de forma eficiente. Abaixo estão alguns pontos que gostaria de destacar e algumas sugestões de melhoria:
+Parabéns pela sua implementação do servidor em Node.js utilizando o Express.js! Você conseguiu atender a maioria dos requisitos do desafio de forma eficiente. Abaixo estão alguns pontos que gostaria de destacar e algumas sugestões d melhoria:
 
 #### O que foi feito de forma excelente:
-- A estrutura do código está bem organizada, facilitando a leitura e manutenção.
+- A estrutura do código está bem organizada, facilitando a leitura e manutenção
 - Você implementou corretamente as rotas para lidar com requisições GET e POST.
 - A manipulação de arquivos para renderizar páginas HTML com dados dinâmicos foi realizada de forma correta.
 - As rotas '/sugestao' e '/api/lanches' estão retornando os dados esperados de acordo com os testes.
