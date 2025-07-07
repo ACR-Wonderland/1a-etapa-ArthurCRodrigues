@@ -1,4 +1,4 @@
-# Desafio: Protótipo de Cardápio Digital - DevBurger
+# Desafio: Protótipo de Cardápio Digital - DevBurgerr
 
 Bem-vindo(a) ao desafio de desenvolvimento do protótipo de um cardápio digital para a nossa nova hamburgueria gourmet, a "DevBurger"!
 
