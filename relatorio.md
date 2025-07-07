@@ -4,7 +4,7 @@ Você tem 999 créditos restantes para usar o sistema de feedback AI.## Feedback
 
 Parabéns, ArthurCRodrigues, pela sua implementação do servidor em Node.js utilizando o framework Express.js! Você obteve uma pontuação sólida de 87.67/100, o que é um ótimo resultado.
 
-### Pontos Positivos:
+### Pontos Positivos
 - Você implementou corretamente as rotas para lidar com requisições GET e POST, mostrando um bom entendimento do Express.js.
 - As rotas `/sugestao` e `/contato` estão funcionando conforme o esperado, exibindo corretamente as informações recebidas.
 - A rota da API de Lanches (`/api/lanches`) está retornando os dados no formato JSON esperado.
