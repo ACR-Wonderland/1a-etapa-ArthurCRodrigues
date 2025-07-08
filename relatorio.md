@@ -9,7 +9,7 @@ Olá, ArthurCRodrigues! 🚀
 Primeiramente, gostaria de te parabenizar pelo esforço e dedicação no desafio proposto! Vamos analisar juntos o seu código e identificar as melhorias necessárias para atender aos requisitos.
 
 Percebi que há alguns pontos que precisamos focar para melhorar o seu servidor Express.js. Vamos lá! 
-
+a
 1. **Rota Raiz (/)**
    - Verifiquei que a rota raiz deve retornar status code 200 e o header Content-Type como text/html. Será que estamos garantindo isso na sua rota raiz? Vamos verificar juntos!
 
