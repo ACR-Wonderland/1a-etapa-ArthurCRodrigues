@@ -1,4 +1,4 @@
-Você tem 986 créditos restantes para usar o sistema de feedback AI.
+aVocê tem 986 créditos restantes para usar o sistema de feedback AI.
 Feedback para ArthurCRodrigues:
 Nota final: **83.66666666666667/100**
 
