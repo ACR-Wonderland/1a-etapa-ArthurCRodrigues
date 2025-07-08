@@ -11,7 +11,7 @@ Parabéns, ArthurCRodrigues, pelo seu esforço na resolução do desafio! Você 
 - Boa utilização de callbacks para leitura de arquivos.
 
 ### Pontos a Melhorar:
-
+a
 1. **Tratamento de Erros:**
    - Você está utilizando `fs.readFile` para ler arquivos, o que é correto. No entanto, seria interessante adicionar tratamentos de erro mais específicos, como verificar o tipo de erro retornado e lidar com eles de forma mais detalhada.
 
