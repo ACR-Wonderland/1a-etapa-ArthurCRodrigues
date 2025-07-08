@@ -36,7 +36,9 @@ app.get('/sugestao', (req, res) => {
 });
 
 
-
+app.get('/contato', (req,res) => {
+    res.send("hahahahaha eu não sei fazer a atividade");
+});
 // Rota para receber dados do formulário de contato: POST /contato
 app.post('/contato', (req, res) => {
     const { nome, email, assunto, mensagem } = req.body;
