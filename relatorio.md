@@ -10,7 +10,7 @@ Olá, ArthurCRodrigues! 🚀
 
 Primeiramente, gostaria de te parabenizar pelo esforço e dedicação em enfrentar esse desafio! Vamos juntos analisar o código e descobrir como podemos melhorá-lo para atender aos requisitos propostos. Vamos lá! 🕵️‍♂️
 
-Ao analisar os requisitos que precisam de atenção, percebi que há alguns pontos que precisamos investigar a fundo. Vou te guiar passo a passo para entendermos a raiz de cada problema.
+Ao analisar os requisitos que precisam de atenção, percebi que há alguns pontos que precisamos investigar a  fundo. Vou te guiar passo a passo para entendermos a raiz de cada problema.
 
 1. **Rota Raiz (/)**:
    - Percebi que a rota raiz deve retornar o status code 200 e o header `Content-Type` como `text/html`. Além disso, é necessário conter pelo menos um formulário com campos específicos. Será que a rota raiz está implementada corretamente para atender a esses requisitos?
