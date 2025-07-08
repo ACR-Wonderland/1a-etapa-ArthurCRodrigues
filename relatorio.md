@@ -14,7 +14,7 @@ Ao analisar os requisitos que precisam de atenção, percebi que há alguns pont
 
 1. **Rota Raiz (/)**:
    - Percebi que a rota raiz deve retornar o status code 200 e o header `Content-Type` como `text/html`. Além disso, é necessário conter pelo menos um formulário com campos específicos. Será que a rota raiz está implementada corretamente para atender a esses requisitos?
-
+ 
 2. **Rota de Sugestão (/sugestao)**:
    - Para essa rota, precisamos garantir que ela aceite uma requisição GET com parâmetros específicos na query string e retorne o status code 200 com content-type HTML. Também é importante verificar se os dados da query string estão sendo exibidos corretamente na página HTML. Será que estamos manipulando esses dados adequadamente?
 
