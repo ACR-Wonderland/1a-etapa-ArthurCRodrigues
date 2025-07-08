@@ -11,7 +11,7 @@ Olá, ArthurCRodrigues! 🚀
 Primeiramente, gostaria de te parabenizar pelo esforço dedicado ao desafio de servidor Express.js! É através dos desafios que crescemos e evoluímos na programação. Vamos analisar juntos o seu código e os requisitos que precisam de atenção. Vamos lá!
 
 ### 🏆 Conquistas Bônus:
-Não identifiquei conquistas bônus neste momento, mas não desanime! O importante é continuar aprendendo e evoluindo. Estou aqui para te ajudar a alcançar novas conquistas! 💪
+Não identifiquei conquistas bônus neste momento, mas não desanime! O importante é continuar aprendendo e evoluindo. Estou aqui para te ajudar a alcançar novas conq  uistas! 💪
 
 ### 🕵️‍♂️ Análise de Causa Raiz:
 Ao analisar os requisitos que precisam de atenção, percebi que há alguns pontos que precisamos investigar mais a fundo. Vamos focar em resolver o problema fundamental de cada requisito.
