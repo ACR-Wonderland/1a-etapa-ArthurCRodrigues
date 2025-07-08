@@ -14,7 +14,7 @@ Antes de mais nada, vamos celebrar suas conquistas! Você criou um template para
 
 Agora, vamos focar nos pontos que precisam de atenção. Vou investigar a fundo o código para te ajudar a identificar os problemas fundamentais e corrigi-los. Vamos lá!
 
-1. **Rota /sugestao:**
+1. **Rota /sugestao:**  
    - Percebi que a rota `/sugestao` precisa aceitar uma requisição GET com query string contendo parâmetros "nome" e "ingredientes". Ao analisar o código, vejo que você está capturando esses parâmetros corretamente.
    - No entanto, não encontrei onde você está enviando a resposta com status code 200 e content-type html. É importante garantir que a resposta seja do tipo correto.
    - Além disso, a rota não deve retornar um redirect (status não deve ser 3xx). Verifique se a resposta está sendo enviada da forma esperada.
