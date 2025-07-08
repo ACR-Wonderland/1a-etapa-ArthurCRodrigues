@@ -16,7 +16,7 @@ a
    - Você está utilizando `fs.readFile` para ler arquivos, o que é correto. No entanto, seria interessante adicionar tratamentos de erro mais específicos, como verificar o tipo de erro retornado e lidar com eles de forma mais detalhada.
 
 2. **Substituição de Placeholders:**
-   - Ao realizar a substituição de placeholders nos arquivos HTML, você está utilizando uma string vazia como marcador. Seria mais seguro e claro utilizar marcadores mais distintos para evitar substituições indesejadas. Por exemplo, utilizar `{{nome}}` e `{{ingredientes}}`.
+   - Ao realizar a substituição de placeholders nos arquivos HTML, você está utilizando uma string vazia como marcador. Seria mais seguro e claro utilizar marcadores mais distintos para evitar substituições indesejadas. Por exemplo, utilizar `{{nome}}` e `{{ingredientes}}`.a
 
 3. **Dependências Adicionais:**
    - Foi identificado que seu projeto possui outras dependências além do Express.js. Certifique-se de manter apenas as dependências necessárias para o funcionamento do seu servidor, removendo as que não são utilizadas.
