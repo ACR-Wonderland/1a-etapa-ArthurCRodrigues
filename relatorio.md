@@ -1,4 +1,4 @@
-<sup>Esse é um feedback gerado por IA, ele pode conter erros.</sup>Você tem 982 créditos restantes para usar o sistema de feedback AI.
+ a <sup>Esse é um feedback gerado por IA, ele pode conter erros.</sup>Você tem 982 créditos restantes para usar o sistema de feedback AI.
 
 Feedback para ArthurCRodrigues:
 
