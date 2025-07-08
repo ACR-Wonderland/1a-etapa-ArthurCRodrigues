@@ -12,13 +12,13 @@ app.use(express.urlencoded({ extended: true }));
 
 // Rota Raiz: GET /
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'public/views', 'index.html'));
+    res.sendFile(path.join(__dirname, 'views', 'index.html'));
 });
 
 // Rota de Sugestão: GET /sugestao
 app.get('/sugestao', (req, res) => {
     const { nome, ingredientes } = req.query;
-    const filePath = path.join(__dirname, 'public/views', 'obrigado.html');
+    const filePath = path.join(__dirname, 'views', 'obrigado.html');
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
@@ -40,7 +40,7 @@ app.get('/sugestao', (req, res) => {
 // Rota para receber dados do formulário de contato: POST /contato
 app.post('/contato', (req, res) => {
     const { nome, email, assunto, mensagem } = req.body;
-    const filePath = path.join(__dirname, 'public/views', 'contato-recebido.html');
+    const filePath = path.join(__dirname, 'views', 'contato-recebido.html');
 
     fs.readFile(filePath, 'utf8', (err, data) => {
         if (err) {
