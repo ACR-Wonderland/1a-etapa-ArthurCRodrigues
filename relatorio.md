@@ -12,7 +12,7 @@ Primeiramente, parabéns pelos esforços no desafio! Vamos juntos analisar o seu
 
 ### 🎉 Conquistas Bônus:
 - É ótimo ver que você criou um template para requisições 404 com uma âncora para a rota raiz. Isso mostra atenção aos detalhes!
-- Além disso, você utilizou corretamente as tags label e atributo id nos inputs 'nome' e 'ingredientes' na rota /sugestao. Muito bem! Essa é uma prática importante.
+- Além disso, você utilizou corretamente as tags label e atributo id nos inputs 'nome' e 'ingredientes' n a rota /sugestao. Muito bem! Essa é uma prática importante.
 
 ### Requisitos que Precisam de Atenção:
 1. **Rota /sugestao**:
