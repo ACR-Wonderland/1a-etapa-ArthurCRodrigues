@@ -28,8 +28,8 @@ app.get('/sugestao', (req, res) => {
         // Substitui os placeholders pelos dados da query string
         const responseHtml = data
             .replace('', 
-                `<p><strong>Nome do Lanche:</strong> ${nome}</p>
-                 <p><strong>Ingredientes:</strong> ${ingredientes}</p>`);
+                `<p><strong>Nome do Lanche:</strong> nome</p>
+                 <p><strong>Ingredientes:</strong> ingredientes</p>`);
 
         res.status(200).send(responseHtml);
     });
