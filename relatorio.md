@@ -1,4 +1,4 @@
-Você tem 987 créditos restantes para usar o sistema de feedback AI.
+aVocê tem 987 créditos restantes para usar o sistema de feedback AI.
 ### Requisitos que Precisam de Atenção
 
 1. **Route: /contato (GET) - deve retornar status code 200 e Content-type text/html**
