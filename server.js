@@ -31,9 +31,7 @@ app.get('/sugestao', (req, res) => {
                 `<p><strong>Nome do Lanche:</strong> nome</p>
                  <p><strong>Ingredientes:</strong> ingredientes</p>`);
 
-        res.status(200).send(responseHtml);
-    });
-});
+    
 
 
 app.get('/contato', (req,res) => {
