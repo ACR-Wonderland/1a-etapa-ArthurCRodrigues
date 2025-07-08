@@ -30,7 +30,8 @@ app.get('/sugestao', (req, res) => {
             .replace('', 
                 `<p><strong>Nome do Lanche:</strong> nome</p>
                  <p><strong>Ingredientes:</strong> ingredientes</p>`);
-
+    });
+});
     
 
 
