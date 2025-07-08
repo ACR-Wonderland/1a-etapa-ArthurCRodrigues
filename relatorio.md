@@ -13,7 +13,7 @@ Antes de entrarmos nos ajustes, quero destacar suas conquistas:
 - Você criou um template para requisições 404 com um link de âncora para a rota raiz. Muito bem pensado! 👏
 - Utilizou corretamente as tags label e os atributos id nos inputs 'nome' e 'ingredientes' na rota /sugestao. Excelente atenção aos detalhes! 👍
 
-### Requisitos que Precisam de Atenção:
+### Requisitos que Precisam de Atenção
 Vamos agora investigar juntos as melhorias necessárias em seu código:
 
 1. **Route: /sugestao - Exibir nome e ingredientes na página HTML:**
