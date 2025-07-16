@@ -1,52 +1,66 @@
 <sup>Esse é um feedback gerado por IA, ele pode conter erros.</sup>
 
-Você tem 88 créditos restantes para usar o sistema de feedback AI.
+Você tem 9 créditos restantes para usar o sistema de feedback AI.
 
 # Feedback para ArthurCRodrigues:
 
 Nota final: **18.5/100**
 
-Olá, Arthur! 🌟
+Olá, ArthurCRodrigues! 😊🔍
 
-Primeiramente, quero parabenizá-lo pelo seu esforço e dedicação! Você conquistou alguns pontos importantes, e isso é digno de celebração! 🎉 Você conseguiu criar um template para a página 404 que contém uma âncora para a rota raiz, o que é uma ótima prática. Continue assim!
+Primeiro, quero parabenizá-lo pelo seu esforço em implementar esse projeto com Express.js! 🎉 Você fez um bom trabalho ao estruturar as rotas e trabalhar com o sistema de arquivos. Além disso, adorei que você criou uma página personalizada para erros 404 com uma âncora que leva à raiz, isso mostra atenção aos detalhes e preocupação com a experiência do usuário! 🚀
 
-Agora, vamos dar uma olhada nos pontos que precisam de atenção. Eu percebi que vários requisitos não foram atendidos, e ao investigar seu código, encontrei algumas áreas que precisam de ajustes. Vamos lá? 🚀
+Agora, vamos dar uma olhada nos pontos que precisam de atenção. Lembre-se, cada erro é uma oportunidade de aprendizado! Vamos juntos entender o que pode ser melhorado.
 
-### Análise de Causa Raiz
+### Rota Raiz (`/`)
+**Pontos a serem melhorados:**
+1. **Status Code e Content-Type:** Para a rota `/`, é importante garantir que retornemos o status code 200 e o header `Content-Type` definido como `text/html`. Você já está enviando a página HTML, mas não definiu o header. Pode adicionar isso na sua resposta:
+   ```javascript
+   res.status(200).contentType('text/html').sendFile(...);
+   ```
 
-1. **Rota Raiz (`/`)**:
-   - **Requisitos não atendidos**: Status code 200, header Content-Type text/html, presença de um formulário.
-   - **Causa**: A rota `app.get('/', ...)` foi implementada, mas precisamos garantir que o arquivo `index.html` que você está enviando realmente contenha um formulário. Se não houver um formulário, os testes falharão. Dê uma olhada no seu `index.html` e verifique se ele tem um formulário com os campos necessários! 📝
+2. **Formulário:** Percebi que não há um formulário na sua página inicial. Para atender aos requisitos, você deve incluir um formulário que contenha ao menos dois campos de input. Por exemplo:
+   ```html
+   <form action="/sugestao" method="GET">
+       <input type="text" name="nome" required placeholder="Seu Nome">
+       <input type="text" name="ingredientes" required placeholder="Ingredientes">
+       <button type="submit">Enviar</button>
+   </form>
+   ```
 
-2. **Rota de Sugestão (`/sugestao`)**:
-   - **Requisitos não atendidos**: Status code 200, exibição do nome e ingredientes enviados via query string, âncora para a rota raiz.
-   - **Causa**: A rota está implementada, mas na parte onde você está substituindo os placeholders no HTML, você deixou a string de substituição vazia (`.replace('', ...)`). Isso significa que nada será substituído no HTML. Você precisa corrigir isso para que os dados sejam exibidos corretamente! 🛠️
+### Rota de Sugestão (`/sugestao`)
+**Pontos a serem melhorados:**
+1. **Exibir Dados da Query String:** Você está tentando substituir placeholders em `data` com os valores de `nome` e `ingredientes`, mas o método `replace()` não está configurado corretamente. Certifique-se de definir placeholders no HTML que você está lendo. Por exemplo:
+   ```html
+   <div id="resultados">{{resultados}}</div>
+   ```
+   E então você poderia substituir:
+   ```javascript
+   const responseHtml = data.replace('{{resultados}}', `<p><strong>Nome do Lanche:</strong> ${nome}</p>...`);
+   ```
 
-3. **Rota de Contato (`/contato`)**:
-   - **Requisitos não atendidos**: Status code 200, presença de campos de input e textarea, âncora para a rota raiz.
-   - **Causa**: A rota `app.get('/contato', ...)` foi implementada, mas novamente, precisamos verificar o `contato.html`. Certifique-se de que ele contém todos os campos de input necessários, como `name`, `email`, `assunto` e `mensagem`. Além disso, não se esqueça de incluir um botão de submit e uma âncora para a rota raiz! 🏷️
+2. **Âncora para a Rota Raiz:** Não se esqueça de adicionar uma âncora que leva à rota `/` na sua página de agradecimento. Isso é importante para a navegação do usuário.
 
-4. **Rota de Contato (POST)**:
-   - **Requisitos não atendidos**: Status code 200, resposta final com HTML ou redirect.
-   - **Causa**: Aqui você está usando `req.query` para capturar os dados do formulário, mas para dados enviados via POST, você deve usar `req.body`. Para isso, você precisa adicionar o middleware `express.urlencoded()` para processar os dados corretamente. Isso é fundamental para que a resposta contenha as informações do formulário! 📬
+### Rota de Contato (`/contato`)
+**Pontos a serem melhorados:**
+1. **Verifique a Existência da Rota:** Você já implementou a rota GET, mas é crucial garantir que ela tenha todos os campos necessários no formulário. Isso inclui `nome`, `email`, `assunto` e `mensagem`. Aqui está um exemplo de como isso pode ser feito:
+   ```html
+   <form action="/contato" method="POST">
+       <input type="text" name="nome" required placeholder="Seu Nome">
+       <input type="email" name="email" required placeholder="Seu E-mail">
+       <input type="text" name="assunto" required placeholder="Assunto">
+       <textarea name="mensagem" required placeholder="Mensagem"></textarea>
+       <button type="submit">Enviar</button>
+   </form>
+   ```
 
-### Pontos Críticos
+2. **Método POST:** Note que você está usando `req.query` para obter os dados do formulário. No POST, você deve usar `req.body`, mas para isso você precisa ter o middleware `express.urlencoded()` configurado:
+   ```javascript
+   app.use(express.urlencoded({ extended: true }));
+   ```
 
-- **Dependências**: Você tem outras dependências no seu `package.json` além do `express`. Isso pode estar causando penalidades. Tente manter o projeto o mais leve possível, utilizando apenas o que realmente precisa. 🧹
-
-### Recursos para Aprendizado Adicional
-
-Para ajudá-lo a resolver esses pontos e aprimorar seus conhecimentos, aqui estão alguns recursos que podem ser úteis:
-
-- [Configuração do middleware `express.static`](https://youtu.be/1YscOTfgAI4)
-- [Formulários em Express](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms)
-- [Retornos do servidor e status code](https://youtu.be/RSZHvQomeKE)
+### Problemas de Dependências
+Você mencionou que o projeto contém outras dependências além do Express. Isso pode ser um sinal de que há bibliotecas não utilizadas ou código desnecessário. É sempre bom tentar manter o projeto leve e focado no que realmente precisa.
 
 ### Conclusão
-
-Arthur, você está no caminho certo! 💪 Cada erro é uma oportunidade de aprendizado, e tenho certeza de que, com essas correções, você poderá melhorar ainda mais seu projeto. Continue praticando e não hesite em perguntar se precisar de ajuda! Estou aqui para te apoiar! 🌈
-
-Vamos juntos fazer esse projeto brilhar! ✨
-
----
-<sup>Made By the Autograder Team.</sup><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sup>- [Arthur Carvalho](https://github.com/ArthuCRodrigues)</sup></sup><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sup>- [Arthur Drumond](https://github.com/drumondpucminas)</sup></sup><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sup>- [Gabriel Resende](https://github.com/gnvr29)</sup></sup>
+Arthur, você tem uma boa base e agora é hora de aprimorar seu código! 💪✨ Cada um desses pontos é uma oportunidade para aprender e se tornar um desenvolvedor ainda melhor. Continue assim e não hesite em me chamar se precisar de mais ajuda! Estou aqui para apoiar sua jornada. Vamos em frente! 🚀
