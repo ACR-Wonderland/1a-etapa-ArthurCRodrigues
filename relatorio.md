@@ -1,40 +1,52 @@
 <sup>Esse é um feedback gerado por IA, ele pode conter erros.</sup>
 
-Você tem 97 créditos restantes para usar o sistema de feedback AI.
+Você tem 88 créditos restantes para usar o sistema de feedback AI.
 
 # Feedback para ArthurCRodrigues:
 
 Nota final: **18.5/100**
 
-Thank you for your submission. Here’s some feedback on your code and overall structure:
+Olá, Arthur! 🌟
 
-### General Feedback
-1. **Error Handling**: You have some basic error handling in place, but it could be improved. For instance, in the `/sugestao` and `/contato` routes, you're replacing placeholders with empty strings. This can lead to issues if the placeholders are not present in the HTML files. Consider using more descriptive placeholders (e.g., `{{name}}`, `{{ingredients}}`) and ensure you handle cases where the query parameters might be missing.
+Primeiramente, quero parabenizá-lo pelo seu esforço e dedicação! Você conquistou alguns pontos importantes, e isso é digno de celebração! 🎉 Você conseguiu criar um template para a página 404 que contém uma âncora para a rota raiz, o que é uma ótima prática. Continue assim!
 
-2. **Use of `req.query` for POST Requests**: In the `/contato` POST route, you are using `req.query` to retrieve data. This is incorrect as POST data should be accessed through `req.body`. You will need to use middleware like `express.urlencoded()` or `express.json()` to parse the incoming request body.
+Agora, vamos dar uma olhada nos pontos que precisam de atenção. Eu percebi que vários requisitos não foram atendidos, e ao investigar seu código, encontrei algumas áreas que precisam de ajustes. Vamos lá? 🚀
 
-3. **Static File Serving**: You are serving static files from the `public` directory, which is good. However, make sure the directory structure matches your code expectations, and verify that all referenced files exist.
+### Análise de Causa Raiz
 
-4. **404 Error Handling**: Your middleware for handling 404 errors is correctly placed at the end. However, consider logging the request URL or method for better debugging.
+1. **Rota Raiz (`/`)**:
+   - **Requisitos não atendidos**: Status code 200, header Content-Type text/html, presença de um formulário.
+   - **Causa**: A rota `app.get('/', ...)` foi implementada, mas precisamos garantir que o arquivo `index.html` que você está enviando realmente contenha um formulário. Se não houver um formulário, os testes falharão. Dê uma olhada no seu `index.html` e verifique se ele tem um formulário com os campos necessários! 📝
 
-5. **Test Results**: You mentioned that several tests failed. It would be helpful to provide details on what tests failed and any error messages received. This will help pinpoint specific issues in your code.
+2. **Rota de Sugestão (`/sugestao`)**:
+   - **Requisitos não atendidos**: Status code 200, exibição do nome e ingredientes enviados via query string, âncora para a rota raiz.
+   - **Causa**: A rota está implementada, mas na parte onde você está substituindo os placeholders no HTML, você deixou a string de substituição vazia (`.replace('', ...)`). Isso significa que nada será substituído no HTML. Você precisa corrigir isso para que os dados sejam exibidos corretamente! 🛠️
 
-### Specific Code Feedback
-- **Placeholder Replacement**: In both the `/sugestao` and `/contato` routes, the `replace` function is called with an empty string as the first argument. This will not work as intended. You need to specify what you want to replace (e.g., `data.replace('{{placeholder}}', ...)`).
+3. **Rota de Contato (`/contato`)**:
+   - **Requisitos não atendidos**: Status code 200, presença de campos de input e textarea, âncora para a rota raiz.
+   - **Causa**: A rota `app.get('/contato', ...)` foi implementada, mas novamente, precisamos verificar o `contato.html`. Certifique-se de que ele contém todos os campos de input necessários, como `name`, `email`, `assunto` e `mensagem`. Além disso, não se esqueça de incluir um botão de submit e uma âncora para a rota raiz! 🏷️
 
-- **Dependencies**: Ensure that all dependencies in `package.json` are necessary for your application. For instance, if you are not using Angular in your application, consider removing it from the dependencies.
+4. **Rota de Contato (POST)**:
+   - **Requisitos não atendidos**: Status code 200, resposta final com HTML ou redirect.
+   - **Causa**: Aqui você está usando `req.query` para capturar os dados do formulário, mas para dados enviados via POST, você deve usar `req.body`. Para isso, você precisa adicionar o middleware `express.urlencoded()` para processar os dados corretamente. Isso é fundamental para que a resposta contenha as informações do formulário! 📬
 
-- **File Not Found Error**: You mentioned a file not found error for `routes/api.js`. If this file is intended to be part of your project, ensure it exists in the correct directory. If it's not necessary, you can remove any references to it.
+### Pontos Críticos
 
-### Suggested Improvements
-- **Unit Tests**: Implement unit tests for your routes using a testing framework like Mocha or Jest. This will help you catch errors early and ensure your application behaves as expected.
+- **Dependências**: Você tem outras dependências no seu `package.json` além do `express`. Isso pode estar causando penalidades. Tente manter o projeto o mais leve possível, utilizando apenas o que realmente precisa. 🧹
 
-- **Environment Variables**: Consider using environment variables for configuration, such as the port number. This makes your application more flexible and easier to deploy in different environments.
+### Recursos para Aprendizado Adicional
 
-- **Documentation**: Enhance your documentation in `package.json` by providing a description of your project and adding any relevant instructions for running the application.
+Para ajudá-lo a resolver esses pontos e aprimorar seus conhecimentos, aqui estão alguns recursos que podem ser úteis:
 
-### Conclusion
-Overall, your application has a solid foundation, but there are several areas for improvement, particularly regarding error handling and the handling of request data. Addressing these issues will help ensure your application is robust and functional. If you can provide more details on the test failures, I would be happy to help troubleshoot those specific issues as well.
+- [Configuração do middleware `express.static`](https://youtu.be/1YscOTfgAI4)
+- [Formulários em Express](https://developer.mozilla.org/en-US/docs/Learn_web_development/Extensions/Server-side/Express_Nodejs/forms)
+- [Retornos do servidor e status code](https://youtu.be/RSZHvQomeKE)
+
+### Conclusão
+
+Arthur, você está no caminho certo! 💪 Cada erro é uma oportunidade de aprendizado, e tenho certeza de que, com essas correções, você poderá melhorar ainda mais seu projeto. Continue praticando e não hesite em perguntar se precisar de ajuda! Estou aqui para te apoiar! 🌈
+
+Vamos juntos fazer esse projeto brilhar! ✨
 
 ---
 <sup>Made By the Autograder Team.</sup><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sup>- [Arthur Carvalho](https://github.com/ArthuCRodrigues)</sup></sup><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sup>- [Arthur Drumond](https://github.com/drumondpucminas)</sup></sup><br>&nbsp;&nbsp;&nbsp;&nbsp;<sup><sup>- [Gabriel Resende](https://github.com/gnvr29)</sup></sup>
