@@ -20,8 +20,7 @@ jobs:
            path: submission
 
       - name: Check repository criteria
-        uses: webtech-network/autograder@web-01-1
+        uses: webtech-network/autograder@hex
         with: 
-          redis_name: ${{ secrets.REDIS_NAME }}
-          redis_url: ${{ secrets.REDIS_URL }}
-          autograder_engine: ${{ secrets.ENGINE }}
+          grading_preset: "custom"
+          feedback-type: "ai"
